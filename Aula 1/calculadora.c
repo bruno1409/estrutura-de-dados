@@ -15,7 +15,7 @@ int main() {
     while ((c = getchar()) != '\n' && c != EOF) {}
     system("cls");
     printf("Informe o operador: ");
-    scanf_s("%c", &op);
+    scanf_s("%c", &op, sizeof(op));
     while ((c = getchar()) != '\n' && c != EOF) {}
     system("cls");
     printf("Informe o segundo numero: ");
@@ -40,7 +40,7 @@ int main() {
     }
 
     printf("\n\nDigite S para fazer outra operacao ou qualquer outro valor para encerrar: ");
-    scanf_s("%c", &continuar);
+    scanf_s("%c", &continuar, sizeof(continuar));
     while ((c = getchar()) != '\n' && c != EOF) {}
   } while (continuar == 'S' || continuar == 's');
 
